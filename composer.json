@@ -1,0 +1,31 @@
+{
+  "name": "susutawar/laravel-duitku",
+  "description": "DuitKu Api implementation for laravel",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "SusuTawar\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "SusuTawar",
+      "email": "realsusutawar@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.0|^8.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SusuTawar\\DuitKuServiceProvider"
+      ],
+      "aliases": {
+        "Debugbar": "SusuTawar\\Facade"
+      }
+    }
+  }
+}
