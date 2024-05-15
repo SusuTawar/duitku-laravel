@@ -5,19 +5,19 @@ namespace SusuTawar\Types;
 class DuitKuCallbackResponse
 {
   public string $merchantCode;
-  public int $amount;
-  public string $merchantOrderId;
-  public string $productDetail;
-  public string $additionalParam;
-  public string $paymentMethod;
-  public string $resultCode;
-  public string $merchantUserId;
-  public string $reference;
-  public string $signature;
-  public string $publisherOrderId;
-  public string $spUserHash;
-  public string $settlementDate;
-  public string $issuerCode;
+  public ?int $amount;
+  public ?string $merchantOrderId;
+  public ?string $productDetail;
+  public ?string $additionalParam;
+  public ?string $paymentMethod;
+  public ?string $resultCode;
+  public ?string $merchantUserId;
+  public ?string $reference;
+  public ?string $signature;
+  public ?string $publisherOrderId;
+  public ?string $spUserHash;
+  public ?string $settlementDate;
+  public ?string $issuerCode;
 
   private function __construct() {}
 

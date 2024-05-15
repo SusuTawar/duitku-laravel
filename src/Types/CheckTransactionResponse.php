@@ -5,10 +5,10 @@ namespace SusuTawar\Types;
 class CheckTransactionResponse
 {
   public string $merchantOrderId;
-  public string $reference;
-  public string $status;
-  public string $statusStr;
-  public int $amount;
+  public ?string $reference;
+  public ?string $status;
+  public ?string $statusStr;
+  public ?int $amount;
 
   public static function create($merchantOrderId, string $reference = null, int $amount = null, string $statusCode = null): self
   {

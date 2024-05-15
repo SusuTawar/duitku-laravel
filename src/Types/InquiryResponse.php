@@ -7,7 +7,7 @@ class InquiryResponse {
   public ?string $paymentUrl;
   public ?string $vaNumber;
   public ?string $qrString;
-  public int $amount;
+  public ?int $amount;
 
   private function __construct() {}
 
