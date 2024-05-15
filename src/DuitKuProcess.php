@@ -199,7 +199,7 @@ class DuitKuProcess {
       ->acceptJson()
       ->post($this->url() . '/merchant/transactionStatus', [
         'merchantCode' => $this->merchantId,
-        'orderId' => $orderId,
+        'merchantOrderId' => $orderId,
         'signature' => $signature,
       ]);
     if (!$response->successful()) {
